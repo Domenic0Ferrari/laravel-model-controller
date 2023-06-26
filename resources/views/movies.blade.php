@@ -2,16 +2,16 @@
 
 @section('contents')
     <div class="container">
-        <h2>Movies</h2>
+        <h2 class="text-center">Movies</h2>
         <div class="row">
             @foreach ($colMovies as $movie)
             <div class="col-4">
-                <div class="card h-100">
-                    <h5>{{ $movie->title }}</h5>
-                    <h6>{{ $movie->original_title }}</h6>
-                    <div>{{ $movie->nationality }}</div>
-                    <div>{{ $movie->date }}</div>
-                    <div>{{ $movie->vote }}</div>
+                <div class="card p-3 mb-3">
+                    <h5>Titolo: {{ $movie->title }}</h5>
+                    <h6>Titolo originale: {{ $movie->original_title }}</h6>
+                    <div>Nazione: {{ $movie->nationality }}</div>
+                    <div>Anno di uscita: {{ $movie->date }}</div>
+                    <div>Voto: {{ $movie->vote }}</div>
                 </div>
             </div>
             @endforeach
