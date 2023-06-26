@@ -1,5 +1,5 @@
 @php
-    $menuItems = config('menu')
+    $menuItems = config('menu');
 @endphp
 
 <nav>
