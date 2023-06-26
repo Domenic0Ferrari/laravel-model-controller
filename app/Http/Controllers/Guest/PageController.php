@@ -11,4 +11,12 @@ class PageController extends Controller
     {
         return view('home');
     }
+    public function about()
+    {
+        return view('about');
+    }
+    public function movies()
+    {
+        return view('movies');
+    }
 }
