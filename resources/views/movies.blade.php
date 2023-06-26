@@ -1,7 +1,20 @@
 @extends('layouts.base')
 
 @section('contents')
-    <h2>Movies</h2>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione sapiente error veniam minus sit voluptas modi odit veritatis, mollitia non dolores doloremque asperiores ducimus vitae assumenda est vel id cupiditate.</p>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione sapiente error veniam minus sit voluptas modi odit veritatis, mollitia non dolores doloremque asperiores ducimus vitae assumenda est vel id cupiditate.</p>
+    <div class="container">
+        <h2>Movies</h2>
+        <div class="row">
+            @foreach ($colMovies as $movie)
+            <div class="col-4">
+                <div class="card">
+                    <h5>{{ $movie->title }}</h5>
+                    <h6></h6>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+            </div>
+            @endforeach
+        </div>
+    </div>
 @endsection
